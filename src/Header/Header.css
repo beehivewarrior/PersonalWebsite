@@ -26,6 +26,19 @@
 
 }
 
-.navbar-toggler{
-   color: #030305;
+.nav-link {
+    font-size: 1.15rem;
 }
+
+.nav-link:active, :visited{
+    color: #030305;
+}
+
+.nav-link:hover{
+    color: #f2f4ef;
+}
+
+.bg-dark, .navbar-dark{
+    background-color: #030305;
+    color: #f2f4ef;
+ }
