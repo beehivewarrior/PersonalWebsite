@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #efb730;
+}
+/*#text-logo {*/
+/*    color: white;*/
+
+/*}*/
+.navbar-brand {
+    font-size: 36pt;
+    color: #f2f4ef;
+    font-weight: 200;
+}
+
+.navbar-brand:visited {
+    color: #f2f4ef;
+}
+
+.navbar-brand:hover{
+    color: #f2f4ef;
+}
+
+.navbar-brand span {
+    color: #030305;
+    font-size: 42pt;
+    font-weight: normal;
+
+}
+
+.navbar-toggler{
+   color: #030305;
+}
