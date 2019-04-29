@@ -1,27 +1,27 @@
-.navbar {
+#navigation {
     background-color: #efb730;
 }
 /*#text-logo {*/
 /*    color: white;*/
 
 /*}*/
-.navbar-brand {
-    font-size: 36pt;
+#logo {
+    font-size: 3rem;
     color: #f2f4ef;
     font-weight: 200;
 }
 
-.navbar-brand:visited {
+#logo:visited {
     color: #f2f4ef;
 }
 
-.navbar-brand:hover{
+#logo:hover {
     color: #f2f4ef;
 }
 
-.navbar-brand span {
+#logo span {
     color: #030305;
-    font-size: 42pt;
+    font-size: 4rem;
     font-weight: normal;
 
 }
@@ -38,7 +38,7 @@
     color: #f2f4ef;
 }
 
-.bg-dark, .navbar-dark{
-    background-color: #030305;
-    color: #f2f4ef;
- }
+/*.bg-dark, .navbar-dark{*/
+/*    background-color: #030305;*/
+/*    color: #f2f4ef;*/
+/* }*/
