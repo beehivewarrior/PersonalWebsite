@@ -15,7 +15,7 @@ export default class App extends React.Component {
                     <div className={"row"} id={"hero-row"}>
                         <Hero/>
                     </div>
-                    <div className={"row"}>
+                    <div className={"row"} id={"text-row"}>
                         <div className={"col-6"}>
                             <h2>Para 1</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim varius erat,

@@ -24,6 +24,11 @@
     color: #61dafb;
 }
 
+#text-row {
+    position: relative;
+    top: -75px;
+}
+
 
 @keyframes App-logo-spin {
     from {
