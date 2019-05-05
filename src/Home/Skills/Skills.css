@@ -1,0 +1,7 @@
+.my-skills {
+    margin-top: 15px;
+}
+
+.my-skills:last-of-type {
+    margin-bottom: 35px;
+}

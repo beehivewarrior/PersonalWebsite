@@ -38,6 +38,30 @@
     color: #f2f4ef;
 }
 
+@media only screen and (max-width: 600px) {
+    #logo span {
+        font-size: 22pt;
+
+    }
+
+    #logo {
+        font-size: 18pt;
+        font-weight: 200;
+    }
+
+    .nav-link {
+        font-size: 1.15rem;
+    }
+
+    .nav-link:active, .nav-link:visited, .nav-link:link {
+        color: #030305;
+    }
+
+    .nav-link:hover {
+        color: #f2f4ef;
+    }
+}
+
 /*.bg-dark, .navbar-dark{*/
 /*    background-color: #030305;*/
 /*    color: #f2f4ef;*/

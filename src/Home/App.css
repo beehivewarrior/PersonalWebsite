@@ -1,4 +1,4 @@
-.App {
+body {
     background-color: #f2f4ef;
     color: #030305;
 }
@@ -24,7 +24,16 @@
     color: #61dafb;
 }
 
-#text-row {
+.section-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.test3 {
+    background: green;
+}
+
+.post-hero {
     position: relative;
     top: -75px;
 }
