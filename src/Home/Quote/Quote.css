@@ -1,0 +1,23 @@
+
+.quote-banner {
+    background-image: url("../../img/lake mary.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+}
+
+.inner-banner {
+    background: rgba(3, 3, 5, .4);
+    min-height: 10vh;
+}
+
+.quote-text {
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.source {
+    color: ghostwhite;
+}

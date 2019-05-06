@@ -30,7 +30,7 @@
     font-size: 1.15rem;
 }
 
-.nav-link:active, :visited{
+.nav-link:active, .nav-link:visited, .nav-link:link {
     color: #030305;
 }
 

@@ -3,34 +3,9 @@ body {
     color: #030305;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-}
-
-.App-header {
-    background-color: #12406A;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
 .section-header {
     text-align: center;
     font-weight: bold;
-}
-
-.test3 {
-    background: green;
 }
 
 .post-hero {
@@ -38,8 +13,25 @@ body {
     top: -75px;
 }
 
+.last-post {
+    position: static;
+    margin-top: -75px;
+}
+
 .repo-link:link, .repo-link:visited, .repo-link:focus {
     color: white;
+}
+
+.bottom-menu {
+    background-color: #030305;
+    border-bottom: #f2f4ef solid thin;
+    color: #f2f4ef;
+}
+
+.copyright {
+    background-color: #030305;
+    color: #f2f4ef;
+    text-align: center;
 }
 
 

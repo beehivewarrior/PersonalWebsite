@@ -1,4 +1,7 @@
-
+.skill .img-fluid {
+    min-height: 35px;
+    min-width: 35px;
+}
 .vcenter {
     margin-top: 50%;
 }
