@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Skill from "./Skill/Skill";
-import SKILLSWHOLE from "./SKILL_LIST";
+import WHOLE_LIST_OF_SKILLS from "./SKILL_LIST";
 import "./Skills.css";
 
 export default class Skills extends Component {
@@ -9,7 +9,7 @@ export default class Skills extends Component {
         this.state = {
             skills: () => {
                 let skill_objects = [];
-                SKILLSWHOLE.forEach((o, k) => {
+                WHOLE_LIST_OF_SKILLS.forEach((o, k) => {
                         let a = {name: o, description: k};
                         skill_objects.push(a);
                     }

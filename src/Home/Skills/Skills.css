@@ -2,6 +2,10 @@
     margin-top: 15px;
 }
 
+.my-skills:first-of-type {
+    margin-top: 30px;
+}
+
 .my-skills:last-of-type {
     margin-bottom: 35px;
 }

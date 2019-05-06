@@ -38,6 +38,10 @@ body {
     top: -75px;
 }
 
+.repo-link:link, .repo-link:visited, .repo-link:focus {
+    color: white;
+}
+
 
 @keyframes App-logo-spin {
     from {
