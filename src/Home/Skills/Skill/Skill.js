@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {SKILL_IMAGES, SKILL_LINKS} from "../SKILL_LIST";
 import "./Skill.css";
 
 export default class Skill extends Component {
@@ -8,41 +7,13 @@ export default class Skill extends Component {
         this.state = {
             name: props.name,
             description: props.description,
-            image: this.getImage(props.name),
-            hasLink: this.checkLink(props.name),
-            link: this.checkLink(props.name) ? this.getLink(props.name) : ""
+            image: props.image,
+            link: props.link
         }
     }
 
-    getImage = (name) => {
-        for (let i = 0; i < SKILL_IMAGES.length; i++) {
-            if (SKILL_IMAGES[i].skill === name) {
-                return SKILL_IMAGES[i].image;
-            }
-        }
-        return ""
-    };
-
-    checkLink = (name) => {
-        for (let i = 0; i < SKILL_LINKS.length; i++) {
-            if (SKILL_LINKS[i].name === name) {
-                return true;
-            }
-        }
-        return false;
-    };
-
-    getLink = (name) => {
-        for (let i = 0; i < SKILL_LINKS.length; i++) {
-            if (SKILL_LINKS[i].name === name) {
-                return SKILL_LINKS[i].link;
-            }
-        }
-        return "";
-    };
-
     verifyLInk = () => {
-        if (this.state.hasLink) {
+        if (this.state.link) {
             return <a href={this.state.link} className="btn btn-primary repo-link">Learn More</a>
         }
     };

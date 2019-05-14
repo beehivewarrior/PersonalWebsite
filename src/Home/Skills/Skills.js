@@ -1,40 +1,45 @@
 import React, {Component} from 'react';
+import axios from 'axios'
 import Skill from "./Skill/Skill";
-import WHOLE_LIST_OF_SKILLS from "./SKILL_LIST";
 import "./Skills.css";
 
 export default class Skills extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            skills: () => {
-                let skill_objects = [];
-                WHOLE_LIST_OF_SKILLS.forEach((o, k) => {
-                        let a = {name: o, description: k};
-                        skill_objects.push(a);
-                    }
-                );
-                return skill_objects;
-            },
-        }
+            skill: []
+        };
+
+
+        axios.get('http://10.0.20.104:8000/api/v1/skills/',
+            {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(response => {
+                this.setState({skill: response.data});
+            });
     }
 
     makeSkills = (l: Array) => {
+        console.log(this.state.skill.slice(0, 3));
         return l.map(this.skill_mapper)
     };
 
     skill_mapper = (skill, iteration) => {
         let a;
         if (iteration < 3) {
-            a = <Skill name={skill.name} description={skill.description} key={iteration}/>
+            a = <Skill image={skill.image} name={skill.model_name} description={skill.description} link={skill.link}
+                       key={iteration}/>
         }
         return a;
     };
 
 
     render() {
-        let y = this.makeSkills(this.state.skills().slice(0, 3));
-        let z = this.makeSkills(this.state.skills().slice(3));
+        let y = this.makeSkills(this.state.skill.slice(0, 3));
+        let z = this.makeSkills(this.state.skill.slice(3));
         return (
             <div className={"col"}>
                 <div className={"row"}>

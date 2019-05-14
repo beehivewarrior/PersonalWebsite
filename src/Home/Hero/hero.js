@@ -5,10 +5,6 @@ import banner2 from "../../img/hero@0,5x.jpg"
 
 export default class Hero extends Component {
 
-    onLoad = (event) => {
-        console.log(event.target.currentSrc)
-    };
-
     render() {
 
 
@@ -16,7 +12,7 @@ export default class Hero extends Component {
             <div className={"col-md-12"}>
                 <div className={"row"}>
                     <img className={"img-fluid"} alt={"res"}
-                         srcSet={`${banner2} 336w, ${banner} 1440w`} onLoad={this.onLoad}/>
+                         srcSet={`${banner2} 336w, ${banner} 1440w`}/>
                 </div>
                 <div className={"row"}>
                     <div className={"col-md-12"} id={"banner-background"}>
